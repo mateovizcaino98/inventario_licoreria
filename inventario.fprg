@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="inventario"/>
+        <attribute name="authors" value="mateo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-24 10:24:13 p. m."/>
+        <attribute name="created" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MDk6MTE6MTQgcC4gbS47MzA0OA=="/>
+        <attribute name="edited" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MTA6MjQ6MTMgcC4gbS47MzszMTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sistemaencendido" type="Boolean" array="False" size=""/>
+            <assign variable="sistemaencendido" expression="true"/>
+            <while expression="sistemaencendido = true">
+                <declare name="selecci&#243;n, selecci&#243;nlistaproductos, selecci&#243;nactualizar" type="Integer" array="False" size=""/>
+                <output expression="&quot;====Men&#250;====&quot;" newline="True"/>
+                <output expression="&quot;1. Mostrar lista de productos&quot;" newline="True"/>
+                <output expression="&quot;2. A&#241;adir un producto&quot;" newline="True"/>
+                <output expression="&quot;3. Actualizar un producto&quot;" newline="True"/>
+                <output expression="&quot;4. Salir&quot;" newline="True"/>
+                <input variable="selecci&#243;n"/>
+                <if expression="selecci&#243;n = 1">
+                    <then>
+                        <output expression="&quot;==Mostrar lista de productos==&quot;" newline="True"/>
+                        <output expression="&quot;1. Ver todos los productos&quot;" newline="True"/>
+                        <output expression="&quot;2. Buscar producto espec&#237;fico&quot;" newline="True"/>
+                        <input variable="selecci&#243;nlistaproductos"/>
+                        <if expression="selecci&#243;nlistaproductos = 1">
+                            <then>
+                                <output expression="&quot;Aqu&#237; va el c&#243;digo para mostrar todos los productos&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="selecci&#243;nlistaproductos = 2">
+                            <then>
+                                <output expression="&quot;Aqu&#237; va el c&#243;digo para buscar un producto en espec&#237;fico&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="selecci&#243;nlistaproductos &lt;&gt; 1 AND selecci&#243;nlistaproductos &lt;&gt; 2">
+                            <then>
+                                <output expression="&quot;Opci&#243;n inv&#225;lida&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="selecci&#243;n = 2">
+                    <then>
+                        <output expression="&quot;==A&#241;adir un producto==&quot;" newline="True"/>
+                        <output expression="&quot;Aqu&#237; va el c&#243;digo para ingresar un producto&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="selecci&#243;n = 3">
+                    <then>
+                        <output expression="&quot;===Actualizar un producto===&quot;" newline="True"/>
+                        <output expression="&quot;1. Venta&quot;" newline="True"/>
+                        <output expression="&quot;2. Actualizar todos los campos&quot;" newline="True"/>
+                        <input variable="selecci&#243;nactualizar"/>
+                        <if expression="selecci&#243;nactualizar = 1">
+                            <then>
+                                <output expression="&quot;Aqu&#237; va el c&#243;digo para la venta&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="selecci&#243;nactualizar = 2">
+                            <then>
+                                <output expression="&quot;Aqu&#237; va el c&#243;digo para actualizar todo un producto&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="selecci&#243;nactualizar &lt;&gt; 1 AND selecci&#243;nactualizar &lt;&gt; 2">
+                            <then>
+                                <output expression="&quot;Opci&#243;n inv&#225;lida&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="selecci&#243;n = 4">
+                    <then>
+                        <assign variable="sistemaencendido" expression="false"/>
+                        <output expression="&quot;El programa ha finalizado&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="selecci&#243;n &lt;&gt; 1 AND selecci&#243;n &lt;&gt; 2 AND selecci&#243;n &lt;&gt; 3 AND selecci&#243;n &lt;&gt; 4">
+                    <then>
+                        <output expression="&quot;Opci&#243;n inv&#225;lida&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
