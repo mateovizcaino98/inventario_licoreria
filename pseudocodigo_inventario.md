@@ -17,7 +17,18 @@ Función Principal
             Salida "2. Buscar producto específico"
             Entrada selecciónlistaproductos
             Si selecciónlistaproductos = 1
-                Salida "Aquí va el código para mostrar todos los productos"
+                Salida "Whisky Johnnie Walker Red Label - $25"
+                Salida "Whisky Chivas Regal 12 Años - $40"
+                Salida "Ron Abuelo 7 Años - $22"
+                Salida "Ron Zacapa 23 - $55"
+                Salida "Vodka Absolut - $20"
+                Salida "Vodka Smirnoff - $15"
+                Salida "Tequila José Cuervo Especial - $28"
+                Salida "Tequila Don Julio Blanco - $60"
+                Salida "Cerveza Corona (6 pack) - $8"
+                Salida "Cerveza Pilsener (6 pack) - $6"
+                Salida "Vino Casillero del Diablo - $12"
+                Salida "Vino Trapiche Malbec - $14"
             Fin
             Si selecciónlistaproductos = 2
                 Salida "Aquí va el código para buscar un producto en específico"
