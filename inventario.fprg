@@ -4,11 +4,12 @@
         <attribute name="name" value="inventario"/>
         <attribute name="authors" value="mateo"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-26 08:09:16 p.&#160;m."/>
+        <attribute name="saved" value="2026-06-26 08:22:36 p.&#160;m."/>
         <attribute name="created" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MDk6MTE6MTQgcC4gbS47MzA0OA=="/>
         <attribute name="edited" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MTA6MjQ6MTMgcC4gbS47MzszMTUz"/>
         <attribute name="edited" value="SFA7TEFQVE9QLURBTVJJQUhQOzIwMjYtMDYtMjY7MDg6MDg6MzEgcC7CoG0uOzI7bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MDk6MTE6MTQgcC4gbS47aW52ZW50YXJpbyBtb2RpZmljYWRvLmZwcmc7ODc1Nw=="/>
         <attribute name="edited" value="SFA7TEFQVE9QLURBTVJJQUhQOzIwMjYtMDYtMjY7MDg6MDk6MTYgcC7CoG0uOzE7Mjk1OQ=="/>
+        <attribute name="edited" value="TGFwdG9wLVBDO01BVEVPR1BDOzIwMjYtMDYtMjY7MDg6MjI6MzYgcC7CoG0uOzE7MzEyMQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -53,7 +54,13 @@
                 <if expression="selecci&#243;n = 2">
                     <then>
                         <output expression="&quot;==A&#241;adir un producto==&quot;" newline="True"/>
-                        <output expression="&quot;Aqu&#237; va el c&#243;digo para ingresar un producto&quot;" newline="True"/>
+                        <declare name="ProductoNuevo" type="String" array="False" size=""/>
+                        <declare name="CodigoProductoNuevo" type="Real" array="False" size=""/>
+                        <output expression="&quot;==A&#241;adir un producto==&quot;" newline="True"/>
+                        <input variable="ProductoNuevo"/>
+                        <output expression="&quot;Coloca el codigo del producto.&quot;" newline="True"/>
+                        <input variable="CodigoProductoNuevo"/>
+                        <output expression="&quot;Se a&#241;adio al inventario: &quot; &amp; ProductoNuevo &amp; &quot; con el c&#243;digo:&quot; &amp; CodigoProductoNuevo" newline="True"/>
                     </then>
                     <else/>
                 </if>
