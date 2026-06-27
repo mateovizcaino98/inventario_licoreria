@@ -39,7 +39,13 @@ Función Principal
         Fin
         Si selección = 2
             Salida "==Añadir un producto=="
-            Salida "Aquí va el código para ingresar un producto"
+            Declarar Cadena ProductoNuevo
+            Declarar Real CodigoProductoNuevo
+
+            Entrada ProductoNuevo
+            Salida "Coloca el codigo del producto."
+            Entrada CodigoProductoNuevo
+            Salida "Se añadio al inventario: " & ProductoNuevo & " con el código:" & CodigoProductoNuevo
         Fin
         Si selección = 3
             Salida "===Actualizar un producto==="
