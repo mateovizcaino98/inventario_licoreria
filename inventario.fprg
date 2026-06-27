@@ -4,9 +4,13 @@
         <attribute name="name" value="inventario"/>
         <attribute name="authors" value="mateo"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-24 10:24:13 p. m."/>
+        <attribute name="saved" value="2026-06-26 08:34:41 p.&#160;m."/>
         <attribute name="created" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MDk6MTE6MTQgcC4gbS47MzA0OA=="/>
-        <attribute name="edited" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MTA6MjQ6MTMgcC4gbS47MzszMTUz"/>
+        <attribute name="edited" value="SFA7TEFQVE9QLURBTVJJQUhQOzIwMjYtMDYtMjY7MDg6MDg6MzEgcC7CoG0uOzI7bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MDk6MTE6MTQgcC4gbS47aW52ZW50YXJpbyBtb2RpZmljYWRvLmZwcmc7ODc1Nw=="/>
+        <attribute name="edited" value="SFA7TEFQVE9QLURBTVJJQUhQOzIwMjYtMDYtMjY7MDg6MDk6MTYgcC7CoG0uOzE7Mjk1OQ=="/>
+        <attribute name="edited" value="TGFwdG9wLVBDO01BVEVPR1BDOzIwMjYtMDYtMjY7MDg6MjI6MzYgcC7CoG0uOzE7MzEyMQ=="/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLVFSRE5KNTI7MjAyNi0wNi0yNjswODozMjozOCBwLsKgbS47MTttYXRlbztERVNLVE9QLU02MU1ORjg7MjAyNi0wNi0yNDswOToxMToxNCBwLiBtLjtpbnZlbnRhcmlvX2xpY29yZXJpYS5mcHJnOzkzMDg="/>
+        <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLVFSRE5KNTI7MjAyNi0wNi0yNjswODozNDo0MSBwLsKgbS47MTszNTI1"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -29,7 +33,18 @@
                         <input variable="selecci&#243;nlistaproductos"/>
                         <if expression="selecci&#243;nlistaproductos = 1">
                             <then>
-                                <output expression="&quot;Aqu&#237; va el c&#243;digo para mostrar todos los productos&quot;" newline="True"/>
+                                <output expression="&quot;Whisky Johnnie Walker Red Label - $25&quot;" newline="True"/>
+                                <output expression="&quot;Whisky Chivas Regal 12 A&#241;os - $40&quot;" newline="True"/>
+                                <output expression="&quot;Ron Abuelo 7 A&#241;os - $22&quot;" newline="True"/>
+                                <output expression="&quot;Ron Zacapa 23 - $55&quot;" newline="True"/>
+                                <output expression="&quot;Vodka Absolut - $20&quot;" newline="True"/>
+                                <output expression="&quot;Vodka Smirnoff - $15&quot;" newline="True"/>
+                                <output expression="&quot;Tequila Jos&#233; Cuervo Especial - $28&quot;" newline="True"/>
+                                <output expression="&quot;Tequila Don Julio Blanco - $60&quot;" newline="True"/>
+                                <output expression="&quot;Cerveza Corona (6 pack) - $8&quot;" newline="True"/>
+                                <output expression="&quot;Cerveza Pilsener (6 pack) - $6&quot;" newline="True"/>
+                                <output expression="&quot;Vino Casillero del Diablo - $12&quot;" newline="True"/>
+                                <output expression="&quot;Vino Trapiche Malbec - $14&quot;" newline="True"/>
                             </then>
                             <else/>
                         </if>
@@ -51,7 +66,13 @@
                 <if expression="selecci&#243;n = 2">
                     <then>
                         <output expression="&quot;==A&#241;adir un producto==&quot;" newline="True"/>
-                        <output expression="&quot;Aqu&#237; va el c&#243;digo para ingresar un producto&quot;" newline="True"/>
+                        <declare name="ProductoNuevo" type="String" array="False" size=""/>
+                        <declare name="CodigoProductoNuevo" type="Real" array="False" size=""/>
+                        <output expression="&quot;==A&#241;adir un producto==&quot;" newline="True"/>
+                        <input variable="ProductoNuevo"/>
+                        <output expression="&quot;Coloca el codigo del producto.&quot;" newline="True"/>
+                        <input variable="CodigoProductoNuevo"/>
+                        <output expression="&quot;Se a&#241;adio al inventario: &quot; &amp; ProductoNuevo &amp; &quot; con el c&#243;digo:&quot; &amp; CodigoProductoNuevo" newline="True"/>
                     </then>
                     <else/>
                 </if>
@@ -63,13 +84,28 @@
                         <input variable="selecci&#243;nactualizar"/>
                         <if expression="selecci&#243;nactualizar = 1">
                             <then>
-                                <output expression="&quot;Aqu&#237; va el c&#243;digo para la venta&quot;" newline="True"/>
+                                <declare name="codigodelproducto" type="Integer" array="False" size=""/>
+                                <declare name="cantidadvendida" type="Integer" array="False" size=""/>
+                                <output expression="&quot;ingrese el codigo del producto&quot;" newline="True"/>
+                                <input variable="codigodelproducto"/>
+                                <output expression="&quot;ingrese la cantidad vendida&quot;" newline="True"/>
+                                <input variable="cantidadvendida"/>
+                                <comment text="Aqui sucede la operacion"/>
+                                <output expression="&quot;cantidad actualizada exitosamente&quot;" newline="True"/>
                             </then>
                             <else/>
                         </if>
                         <if expression="selecci&#243;nactualizar = 2">
                             <then>
-                                <output expression="&quot;Aqu&#237; va el c&#243;digo para actualizar todo un producto&quot;" newline="True"/>
+                                <declare name="nombredelproducto" type="String" array="False" size=""/>
+                                <output expression="&quot;Ingrese el nombre del producto&quot;" newline="True"/>
+                                <input variable="nombredelproducto"/>
+                                <declare name="preciodeventadelproducto" type="Real" array="False" size=""/>
+                                <output expression="&quot;Ingrese el precio de venta del producto&quot;" newline="True"/>
+                                <input variable="preciodeventadelproducto"/>
+                                <declare name="preciodecompradelproducto" type="Real" array="False" size=""/>
+                                <output expression="&quot;Ingrese el precio de compra del producto&quot;" newline="True"/>
+                                <input variable="preciodecompradelproducto"/>
                             </then>
                             <else/>
                         </if>
