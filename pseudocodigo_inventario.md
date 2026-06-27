@@ -47,10 +47,30 @@ Función Principal
             Salida "2. Actualizar todos los campos"
             Entrada selecciónactualizar
             Si selecciónactualizar = 1
-                Salida "Aquí va el código para la venta"
+                Declarar Entero codigodelproducto
+                Declarar Entero cantidadvendida
+
+                Salida "ingrese el codigo del producto"
+                Entrada codigodelproducto
+                Salida "ingrese la cantidad vendida"
+                Entrada cantidadvendida
+
+                ... Aqui sucede la operacion
+                Salida "cantidad actualizada exitosamente"
             Fin
             Si selecciónactualizar = 2
-                Salida "Aquí va el código para actualizar todo un producto"
+                Declarar Cadena nombredelproducto
+
+                Salida "Ingrese el nombre del producto"
+                Entrada nombredelproducto
+                Declarar Real preciodeventadelproducto
+
+                Salida "Ingrese el precio de venta del producto"
+                Entrada preciodeventadelproducto
+                Declarar Real preciodecompradelproducto
+
+                Salida "Ingrese el precio de compra del producto"
+                Entrada preciodecompradelproducto
             Fin
             Si selecciónactualizar <> 1 AND selecciónactualizar <> 2
                 Salida "Opción inválida"
