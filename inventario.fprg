@@ -4,9 +4,9 @@
         <attribute name="name" value="inventario"/>
         <attribute name="authors" value="mateo"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-26 07:06:13 p. m."/>
+        <attribute name="saved" value="2026-06-24 10:24:13 p. m."/>
         <attribute name="created" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MDk6MTE6MTQgcC4gbS47MzA0OA=="/>
-        <attribute name="edited" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjY7MDc6MDY6MTMgcC4gbS47NDszMTYy"/>
+        <attribute name="edited" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MTA6MjQ6MTMgcC4gbS47MzszMTUz"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -92,7 +92,6 @@
                 <if expression="selecci&#243;n &lt;&gt; 1 AND selecci&#243;n &lt;&gt; 2 AND selecci&#243;n &lt;&gt; 3 AND selecci&#243;n &lt;&gt; 4">
                     <then>
                         <output expression="&quot;Opci&#243;n inv&#225;lida&quot;" newline="True"/>
-                        <output expression="&quot;Vuelva a intentarlo&quot;" newline="True"/>
                     </then>
                     <else/>
                 </if>
