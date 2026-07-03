@@ -4,13 +4,13 @@
         <attribute name="name" value="inventario"/>
         <attribute name="authors" value="mateo"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-26 08:34:41 p.&#160;m."/>
+        <attribute name="saved" value="2026-06-26 09:45:52 p.&#160;m."/>
         <attribute name="created" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MDk6MTE6MTQgcC4gbS47MzA0OA=="/>
         <attribute name="edited" value="SFA7TEFQVE9QLURBTVJJQUhQOzIwMjYtMDYtMjY7MDg6MDg6MzEgcC7CoG0uOzI7bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDYtMjQ7MDk6MTE6MTQgcC4gbS47aW52ZW50YXJpbyBtb2RpZmljYWRvLmZwcmc7ODc1Nw=="/>
         <attribute name="edited" value="SFA7TEFQVE9QLURBTVJJQUhQOzIwMjYtMDYtMjY7MDg6MDk6MTYgcC7CoG0uOzE7Mjk1OQ=="/>
-        <attribute name="edited" value="TGFwdG9wLVBDO01BVEVPR1BDOzIwMjYtMDYtMjY7MDg6MjI6MzYgcC7CoG0uOzE7MzEyMQ=="/>
         <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLVFSRE5KNTI7MjAyNi0wNi0yNjswODozMjozOCBwLsKgbS47MTttYXRlbztERVNLVE9QLU02MU1ORjg7MjAyNi0wNi0yNDswOToxMToxNCBwLiBtLjtpbnZlbnRhcmlvX2xpY29yZXJpYS5mcHJnOzkzMDg="/>
         <attribute name="edited" value="VXN1YXJpbztERVNLVE9QLVFSRE5KNTI7MjAyNi0wNi0yNjswODozNDo0MSBwLsKgbS47MTszNTI1"/>
+        <attribute name="edited" value="TGFwdG9wLVBDO01BVEVPR1BDOzIwMjYtMDYtMjY7MDk6NDU6NTIgcC7CoG0uOzI7MzEyNg=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -68,7 +68,7 @@
                         <output expression="&quot;==A&#241;adir un producto==&quot;" newline="True"/>
                         <declare name="ProductoNuevo" type="String" array="False" size=""/>
                         <declare name="CodigoProductoNuevo" type="Real" array="False" size=""/>
-                        <output expression="&quot;==A&#241;adir un producto==&quot;" newline="True"/>
+                        <output expression="&quot;Coloque el nombre del nuevo producto.&quot;" newline="True"/>
                         <input variable="ProductoNuevo"/>
                         <output expression="&quot;Coloca el codigo del producto.&quot;" newline="True"/>
                         <input variable="CodigoProductoNuevo"/>
